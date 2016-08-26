@@ -70,37 +70,37 @@ function dogstatsd:gauge(stat, value, sample_rate, tags)
 end
 
 function dogstatsd:counter(stat, value, sample_rate, tags)
-   self.tags = {tags = tags or {}}
+   self.meta = {tags = tags or {}}
    return self.statsd:counter(stat, value, sample_rate)
 end
 
 function dogstatsd:increment(stat, value, sample_rate, tags)
-   self.tags = {tags = tags or {}}
+   self.meta = {tags = tags or {}}
    return self.statsd:increment(stat, value, sample_rate)
 end
 
 function dogstatsd:decrement(stat, value, sample_rate, tags)
-   self.tags = {tags = tags or {}}
+   self.meta = {tags = tags or {}}
    return self.statsd:decrement(stat, value, sample_rate)
 end
 
 function dogstatsd:timer(stat, ms, tags)
-   self.tags = {tags = tags or {}}
+   self.meta = {tags = tags or {}}
    return self.statsd:timer(stat, ms)
 end
 
 function dogstatsd:histogram(stat, value, tags)
-   self.tags = {tags = tags or {}}
+   self.meta = {tags = tags or {}}
    return self.statsd:histogram(stat, value)
 end
 
 function dogstatsd:meter(stat, value, tags)
-   self.tags = {tags = tags or {}}
+   self.meta = {tags = tags or {}}
    return self.statsd:meter(stat, value)
 end
 
 function dogstatsd:set(stat, value, tags)
-   self.tags = {tags = tags or {}}
+   self.meta = {tags = tags or {}}
    return self.statsd:set(stat, value)
 end
 
