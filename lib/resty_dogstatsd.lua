@@ -1,4 +1,4 @@
-local resty_statsd = require('resty_statsd')
+local resty_statsd = require('lib.resty_statsd')
 
 local dogstatsd = {
    metadata = {
