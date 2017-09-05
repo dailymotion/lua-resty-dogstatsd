@@ -1,6 +1,7 @@
 FROM openresty/openresty:xenial
 
 MAINTAINER Stan Chollet <stanislas.chollet@dailymotion.com>
+MAINTAINER Aurelien Busi <aurelien.busi@dailymotion.com>
 
 SHELL ["/bin/bash", "-c"]
 
