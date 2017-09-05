@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+language: generic
+script: echo "Welcome on lua resty dogstatsd"
+deploy:
+  provider: script
+  script: make opm-upload
+  on:
+    branch: master
