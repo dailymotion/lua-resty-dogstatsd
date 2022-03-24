@@ -47,7 +47,7 @@ dogstatsd:meter('lua.page_load', 1)
 
 * dogstatsd.new(config)
   * `config` (Table) -- Optional.
-    * `statsd` -- [lua-resty-statsd config](https://github.com/mediba-system/lua-resty-statsd)
+    * `statsd` -- lua-resty-statsd config
     * `tags` -- Default tags. Merge the tags of the function.
 
 ## DogStatsd Functions
